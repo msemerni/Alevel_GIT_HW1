@@ -132,8 +132,9 @@ img {
   #menu__toggle {
     opacity: 0;
   }
-.dropdown {
-    position: relative;
+  
+    .dropdown {
+        position: relative;
   }
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
@@ -654,6 +655,10 @@ img {
 }
 
 @media (max-width: 991px) {
+
+    .header-main {
+        padding: 30px 0;
+    }
     .design {
         margin: 0 auto;
     }
@@ -703,6 +708,9 @@ img {
     .partners-row {
         padding: 35px 0;
     }
+    .partners-col {
+        width: 50%;
+    }
 
     /* Burger */
     .nav-item {
@@ -717,7 +725,7 @@ img {
         display: flex; /* используем flex для центрирования содержимого */
         align-items: center;  /* центрируем содержимое кнопки */
         position: fixed;
-        top: 65px;
+        top: 45px;
         right: 25px;
         width: 26px;
         height: 26px;
