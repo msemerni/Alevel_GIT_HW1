@@ -126,6 +126,33 @@ img {
     color: #34547A;
 }
 
+/* __________________Burger________________ */
+
+  /* скрываем чекбокс */
+  #menu__toggle {
+    opacity: 0;
+  }
+.dropdown {
+    position: relative;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #D2B942;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      margin: 12px 0 0 0;
+      text-align: right;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
 .main-nav {
     display: flex;
     flex-grow: 1;
@@ -191,7 +218,7 @@ img {
 }
 
 .design-col h1 {
-    display: flex;
+    /* display: flex; */
     /* margin-bottom: 15px; */
     /* align-items: baseline; */
     line-height: 1.4;
@@ -626,8 +653,139 @@ img {
     font-size: 17px;
 }
 
+@media (max-width: 991px) {
+    .design {
+        margin: 0 auto;
+    }
 
+    .design-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .design-col {
+        width: 100%;
+    }
+    
+    .design-col-two {
+        width: 100%;
+        align-items: center;
+        /* text-align: center; */
+    }
+
+    .myskill-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .myskill-col {
+        width: 100%;
+    }
+
+    .myskill-col-container > h2 {
+        padding-top: 0;
+    }
+
+    .myskill-col-container {
+        max-width: 100%;
+    }
+
+    .myskill-col-two {
+        padding-top: 50px;
+    }
+    .picture-box-row {
+        padding-top: 0;
+    }
+
+    .partners-row {
+        padding: 35px 0;
+    }
+
+    /* Burger */
+    .nav-item {
+        padding: 25px;
+    }
+
+    .nav-item > a {
+        font-size: 20px;
+    }
+
+    .menu__btn {
+        display: flex; /* используем flex для центрирования содержимого */
+        align-items: center;  /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 65px;
+        right: 25px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 2;
+      }
+    
+        /* добавляем "гамбургер" */
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+      }
+  
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+  
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      
+      /* контейнер меню */
+      .nav-box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #EEEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 1;
+      }
+      
+      /* элементы меню */
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      
+      #menu__toggle:checked ~ .nav-box {
+        visibility: visible;
+        right: 15px;
+      }
+
+      
+}
 
 
 
