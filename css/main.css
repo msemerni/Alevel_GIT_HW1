@@ -126,7 +126,7 @@ img {
     font-family: Revalia, Arial, Verdana, sans-serif;
     font-size: 48px;
     line-height: 1.24;
-    padding: 0 25px;
+    /* padding: 0 25px; */
     font-weight: 400; /* можно не указывать, т.к. по дефолту*/ 
     text-decoration: none;
     color: #34547A;
@@ -135,15 +135,15 @@ img {
 /* __________________Burger________________ */
 
   /* скрываем чекбокс */
-  #menu__toggle {
+#menu__toggle {
     opacity: 0;
-  }
+}
 
-    .dropdown {
+.dropdown {
         position: relative;
-  }
+}
   /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+.dropdown-content {
       display: none;
       position: absolute;
       right: 0;
@@ -153,32 +153,33 @@ img {
       z-index: 1;
       margin: 12px 0 0 0;
       text-align: right;
-  }
+}
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
 .main-nav {
     display: flex;
     flex-grow: 1;
     justify-content: flex-start;
-    padding: 15px 30px;
+    padding: 5px 0px;
 }
 
 .nav-box {
     display: flex;
     list-style: none;
-    margin: 0 -21px;
+    margin: 0 -20px;
 }
 
 .nav-item {
     text-transform: uppercase;
-    padding: 0 21px;
+    padding:20px;
     white-space: nowrap;
     text-decoration: none;
     letter-spacing: 0.1em;
+    transition: all 0.4s ease;
 }
 
 .nav-box .nav-item:nth-child(1) > a {
@@ -188,6 +189,15 @@ img {
 .nav-item a {
     text-decoration: none;
     color: #34547A;
+    transition: all 0.4s ease;
+}
+
+.nav-item:hover {
+    background: #34547A;
+}
+
+.nav-item:hover a {
+    color: #EEEFF1;
 }
 
 /* _____________________design__________________ */
@@ -215,7 +225,7 @@ img {
     /* justify-content: flex-start; */
     justify-content: center;
     /* удалить ? исправить?*/
-    padding: 25px 25px 60px 25px;
+    padding: 30px 15px 60px 15px;
 }
 
 .design-col-two {
@@ -253,6 +263,7 @@ img {
     display: flex;
 }
 
+
 .writeme {
     color: #FFFFFF;
     background: #34547A;
@@ -262,8 +273,13 @@ img {
     white-space: nowrap;
     /* letter-spacing: 10%; */
     letter-spacing: 0.1em;
+    transition: all 0.4s ease-in;
 }
 
+.writeme:hover  {
+    background: #25f1d6;
+    color: #000;
+}
 /* _____________________aboutme__________________ */
 .aboutme-container {
     display: flex;
@@ -615,6 +631,12 @@ img {
     cursor: pointer;
     padding: 18px 43px;
     border: none;
+    transition: all 0.4s ease-in;
+}
+
+.myform-box-btn:hover {
+    background: #25f1d6;
+    color: #000;
 }
 
 /* _____________________footer__________________ */
@@ -647,18 +669,44 @@ img {
     /* padding: 10px 0 0 0; */
 }
 
-.footer-col > a {
-    text-decoration: none;
-    padding: 5px 11px;
-    font-size: 24px;
-}
-
 .footer-col-two {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     font-size: 17px;
 }
+
+
+
+.footer-ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.footer-ul a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    background: linear-gradient(45deg, #1441e6, #00ff72);
+    border-radius: 100%;
+    color: #fff
+}
+
+.footer-ul a:hover {
+    transform: scale(2);
+    background: none;
+    color: #25f1d6;
+    transition: all .3s ease-in;
+}
+
+/* .footer-ul a i:hover.icon-VK:before {
+    color: blue;
+} */
 
 @media (max-width: 991px) {
 
