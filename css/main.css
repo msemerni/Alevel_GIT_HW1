@@ -708,7 +708,7 @@ img {
     color: blue;
 } */
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
 
     .header-main {
         padding: 30px 0;
