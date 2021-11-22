@@ -284,9 +284,10 @@ img {
 }
 
 .aboutme-box {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    text-align: center;
     max-width: 540px;
     /* line-height: 1.24; */
     padding: 119px 0 65px 0;
@@ -452,27 +453,24 @@ img {
 
 .howiwork-text-container {
     max-width: 540px;
-    padding: 25px 0 15px 0;
-    
+    padding: 25px 0 25px 0;
 }
 
 .howiwork-text-container h2 {
     line-height: 1.16;
     margin: 0 0 15px 0;
     font-weight: 500;
-    font-size: 32px;
 }
 
-.howiwork-row-paragraph p {
+.howiwork-text-container p {
     color: #727272;
     line-height: 1.63;
-    text-align: center;
-    font-size: 16px;
+    /* text-align: center; */
 }
 
 .howiwork-video-box {
     position: relative;
-    padding: 10px 15px 15px 15px ;
+    padding: 15px 15px 15px 15px ;
 }
 
 .playbtn-box {
@@ -577,7 +575,7 @@ img {
     /* display: flex; */
     /* flex-grow: 1; */
     /* flex-direction: column; */
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
     max-width: 570px;
     margin: 0 auto;
