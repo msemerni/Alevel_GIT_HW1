@@ -450,7 +450,7 @@ img {
     /* line-height: 1.24; */
 }
 
-.howiwork-row-paragraph {
+.howiwork-text-container {
     max-width: 540px;
     padding: 25px 0 15px 0;
     
@@ -460,12 +460,14 @@ img {
     line-height: 1.16;
     margin: 0 0 15px 0;
     font-weight: 500;
+    font-size: 32px;
 }
 
 .howiwork-row-paragraph p {
     color: #727272;
     line-height: 1.63;
-    /* text-align: center; */
+    text-align: center;
+    font-size: 16px;
 }
 
 .howiwork-video-box {
