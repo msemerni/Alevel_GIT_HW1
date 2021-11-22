@@ -288,7 +288,7 @@ img {
     flex-direction: column;
     align-items: center;
     max-width: 540px;
-    line-height: 1.24;
+    /* line-height: 1.24; */
     padding: 119px 0 65px 0;
 }
 
@@ -447,22 +447,25 @@ img {
     padding: 103px 0 75px 0;
     align-items: center;
     text-align: center;
-}
-
-.howiwork-text-container > h2 {
-    font-weight: 500;
-    margin: 0 0 15px 0;
-    line-height: 1.16;
+    /* line-height: 1.24; */
 }
 
 .howiwork-row-paragraph {
     max-width: 540px;
     padding: 25px 0 15px 0;
-    line-height: 1.63;
+    
+}
+
+.howiwork-text-container h2 {
+    line-height: 1.16;
+    margin: 0 0 15px 0;
+    font-weight: 500;
 }
 
 .howiwork-row-paragraph p {
     color: #727272;
+    line-height: 1.63;
+    /* text-align: center; */
 }
 
 .howiwork-video-box {
