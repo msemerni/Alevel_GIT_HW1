@@ -284,14 +284,13 @@ img {
 }
 
 .aboutme-box {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
-    /* text-align: center; */
+    align-items: center; */
+    text-align: center;
     max-width: 540px;
-    line-height: 1.24;
-    padding: 120px 0 93px 0;
-
+    /* line-height: 1.24; */
+    padding: 119px 0 65px 0;
 }
 .aboutme-box-paragraphs {
     padding: 25px 0 15px 0;
@@ -299,14 +298,14 @@ img {
 
 .aboutme-box h2 {
     line-height: 1.16;
-    margin: 0 0 25px 0;
+    margin: 0 0 15px 0;
     font-weight: 500;
 }
 
 .aboutme-box p {
     color: #727272;
     line-height: 1.63;
-    padding: 15px 0 0 0;
+    /* padding: 15px 0 0 0; */
     text-align: center;
 }
 
