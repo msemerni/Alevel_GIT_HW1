@@ -286,7 +286,7 @@ img {
 .aboutme-box {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     text-align: center;
     max-width: 540px;
     /* line-height: 1.24; */
