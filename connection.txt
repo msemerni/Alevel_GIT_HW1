@@ -1,0 +1,30 @@
+pass: AekCnfrLdtyzlwfnM
+server: @students.a-level.com.ua
+connection string: msemerni@students.a-level.com.ua
+
+
+
+
+
+Logins:
+
+belous50409
+antiptana
+stepa9chfcars
+vladimirdaragan5
+dgorskaya2003
+sandrozhilenkov
+kramarenkoden83
+sergsmbox
+nekit201200
+three379344
+mcdenis2000
+valerocka1995
+daniijele
+msemerni
+antonstepkin
+dimtimoschenko2015
+chuvetal
+shcherbakevalex
+ygalushko1904
+makarenkoevgen1997
